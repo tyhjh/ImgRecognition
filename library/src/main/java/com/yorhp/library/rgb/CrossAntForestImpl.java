@@ -24,7 +24,7 @@ public class CrossAntForestImpl extends CrossImpl {
             if (width >= template.getWidth() && height >= template.getHeight()) {
                 for (int y = 0; y < height - 1; y++) {
                     //x坐标起点重新设置
-                    for (int x = 1330; x < width - 1; x++) {
+                    for (int x = 950; x < width - 1; x++) {
                         boolean isMatch = matchSingle(originImg, template, x, y);
                         if (isMatch) {
                             matchRectList.add(new Rect(x, y, x + template.getWidth(), y + template.getHeight()));
